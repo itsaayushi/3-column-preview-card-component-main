@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* @font-face {
+  font-family: Lexend_Deca;
+  src: url(https://fonts.google.com/specimen/Lexend+Deca);
+}
+
+@font-face {
+  font-family: Big_Shoulders_Display;
+  src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+} */
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+.options {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; */
+  margin-top: 10rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* column-gap: 5rem; */
+}
+
+.card {
+  padding: 2rem 3rem;
+  height: 48rem;
+}
+
+.card_1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.card_2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card_3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.car_img {
+  transform: translate(1rem, 4rem);
+}
+
+.c_name {
+  /* margin-top: 5rem; */
+  transform: translate(1rem, 8rem);
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.dis {
+  transform: translate(1rem, 12rem);
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 2rem;
+  font-size: 14px;
+  padding-right: 3rem;
+}
+
+.learn_more {
+  padding: 1.5rem 3.5rem;
+  transform: translate(1rem, 20rem);
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  border-radius: 3rem;
+}
+
+.btn_1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn_2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn_3 {
+  color: hsl(179, 100%, 13%);
+}
