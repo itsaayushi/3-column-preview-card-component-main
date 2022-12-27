@@ -8,37 +8,29 @@ html {
   font-size: 10px;
 }
 
-/* @font-face {
-  font-family: Lexend_Deca;
-  src: url(https://fonts.google.com/specimen/Lexend+Deca);
-}
-
-@font-face {
-  font-family: Big_Shoulders_Display;
-  src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
-} */
-
 body {
   background-color: hsl(0, 0%, 95%);
-}
-.options {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row; */
-  margin-top: 10rem;
-  margin-left: 25rem;
-  margin-right: 25rem;
-
+  height: 100vh;
+}
+.options {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  /* column-gap: 5rem; */
+
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  height: 70vh;
 }
 
 .card {
   padding: 2rem 3rem;
-  height: 48rem;
+  padding-top: 5rem;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .card_1 {
@@ -57,13 +49,7 @@ body {
   border-bottom-right-radius: 1rem;
 }
 
-.car_img {
-  transform: translate(1rem, 4rem);
-}
-
 .c_name {
-  /* margin-top: 5rem; */
-  transform: translate(1rem, 8rem);
   color: hsl(0, 0%, 95%);
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
@@ -71,7 +57,6 @@ body {
 }
 
 .dis {
-  transform: translate(1rem, 12rem);
   color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
   line-height: 2rem;
@@ -81,7 +66,6 @@ body {
 
 .learn_more {
   padding: 1.5rem 3.5rem;
-  transform: translate(1rem, 20rem);
   background-color: hsl(0, 0%, 95%);
   border: none;
   border-radius: 3rem;
